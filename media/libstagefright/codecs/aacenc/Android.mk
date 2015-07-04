@@ -1,7 +1,7 @@
 LOCAL_PATH := $(call my-dir)
 include $(CLEAR_VARS)
 include frameworks/av/media/libstagefright/codecs/common/Config.mk
-
+LOCAL_CFLAGS += -O3
 AAC_LIBRARY = fraunhofer
 
 LOCAL_SRC_FILES := basic_op/basicop2.c basic_op/oper_32b.c
